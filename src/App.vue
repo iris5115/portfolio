@@ -2,7 +2,7 @@
   <div id="app">
     <header-menu></header-menu>
     <router-view/>
-    <footer-menu v-if="$route.name == 'Top'"></footer-menu>
+    <footer-menu></footer-menu>
   </div>
 </template>
 

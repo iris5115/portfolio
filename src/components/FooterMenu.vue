@@ -1,7 +1,7 @@
 <template>
 <div class= footer>
   Masasho Portfolio
-  <a href= "https://twitter.com/ms_osaka70pg" >@ms_osaka70pg</a>
+  <a href= "https://twitter.com/ms_osaka70pg" target="_blank">@ms_osaka70pg</a>
 </div>
 
 </template>
