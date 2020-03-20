@@ -24,9 +24,4 @@
   font-weight: bold;
   font-size: 90px;
 }
-.footer{
-  width: 100vw;
-  height: 50px;
-  background-color: red;
-}
 </style>
