@@ -44,6 +44,9 @@ a {
   line-height: 50px;
 }
 
+div{
+  background: cornflowerblue;
+}
 
 @media (max-width: 1000px)
 {
@@ -51,15 +54,13 @@ a {
     margin-left: auto;
     width: 100%;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0;
     list-style: none;
   }
   li {
     width: 20%;
     height: 50px;
-    margin-left:10px;
-    margin-right:10px;
     font-size: 15px;
     position: relative;
   }
@@ -72,7 +73,7 @@ a {
     width: 600px;
     display:flex;
     justify-content: center;
-    padding: 0;
+    padding: 20px 0;
     list-style: none;
   }
   li {

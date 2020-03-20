@@ -5,7 +5,6 @@ import About from '@/components/AboutPage'
 import Works from '@/components/WorksPage'
 import Contact from '@/components/ContactPage'
 
-
 Vue.use(Router)
 
 export default new Router({
