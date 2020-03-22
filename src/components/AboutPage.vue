@@ -1,29 +1,37 @@
 <template>
 <div class="contents">
   <div class="left-contents">
-    <div class="profile">
-      <div class="left-profile">
-        <img class="img" src="../assets/logo.png"/>
-      </div>
-      <div class="right-profile">
-        <h1>Profile</h1>
-        <p1>初めまして。２６歳のエンジニアです。</p1>
+    <div class="profiles">
+      <div class="profile">
+        <div class="left-profile">
+          <img class="my-image-picture" src="../assets/my-image-picture.png"/>
+        </div>
+        <div class="right-profile">
+          <h1>Profile</h1>
+          <p1>まさしょーです。０から１を作るエンジニアの仕事に憧れ、2020年1月から転職に向け本格的にプログラミングを勉強中！<br>
+          プライベートでは自身のスキル向上も兼ねてwebサービスの個人開発をしています。<br>
+          最近、機械学習に興味が出てきたのでPythonを使ったサービスを作ることを検討中。</p1>
+        </div>
       </div>
     </div>
-    <div class="skill">
+    <div class="skills">
       <h1>Skill</h1>
-      <div class="skill-box" v-for="(item, index) in items" :key=index>
-        <h2> {{ item.title }} </h2>
-        <p2> {{ item.text }} </p2>
+      <div class="skill">
+        <div class="skill-box" v-for="(item, index) in items" :key=index>
+          <h2> {{ item.title }} </h2><br>
+          <p2> {{ item.text }} </p2>
+        </div>
       </div>
     </div>
   </div>
   <div class="right-contents">
-    <div class="history">
+    <div class="histories">
       <h1>History</h1>
-      <div class="history-box" v-for="(list, index) in lists" :key=index>
-        <h3> {{ list.title }} </h3>
-        <p3> {{ list.text }} </p3>
+      <div class="history">
+        <div class="history-box" v-for="(list, index) in lists" :key=index>
+          <h3> {{ list.title }} </h3><br>
+          <p3> {{ list.text }} </p3>
+        </div>
       </div>
     </div>
   </div>
@@ -36,54 +44,116 @@ export default {
   data () {
     return {
       items: [
-        { title: 'Ruby on Rails', text: 'あああああ' },
-        { title: 'HTML&CSS', text: 'いいいいい' },
-        { title: 'JQuery', text: 'ううううう' },
-        { title: 'Javasqript', text: 'えええええ' },
-        { title: 'Github', text: 'おおおおお' },
-        { title: 'AWS', text: 'カカかかか' }
+        { title: 'Ruby on Rails', text: 'MVCの考え方やWebサービスの基礎を学ぶために習得。個人開発における中心言語。'},
+        { title: 'HTML&CSS', text: 'webサイトを作成するために使用。HamlやSassを使ったり使わなかったり。'},
+        { title: 'MySQL', text: 'スクールでの制作物や共同開発に使用。RDBMSの勉強は現状の課題の一つ。'},
+        { title: 'Javasqript', text: 'JQueryやVue.jsを使用。かっこいいサイトを作りたいので毎日勉強中。' },
+        { title: 'Github', text: '個人開発や共同開発の際に使用。これからもどんどん草を生やしていきます。'},
+        { title: 'C言語', text: 'ゲーム運営会社に入る前に勉強。基本的な文法は理解しています。'}
         ],
       lists: [
-        { title: '2020年', text: 'aaaaa' },
-        { title: '2019年', text: 'bbbbb' },
-        { title: '2018年', text: 'ccccc' },
-        { title: '2017年', text: 'dddddd' },
-        { title: '2016年', text: 'eeeeeeee' },
-        { title: '2015年', text: 'ffffffff' },
-      ]
+        { title: '2016年8月', text: 'ゲームが好きだったこともあり、ゲーム運営会社に入社。'},
+        { title: '2017年2月', text: '充実はしていたものの、プライベートがほとんどない働き方に疑問を持つようになる。'},
+        { title: '2017年9月', text: '担当していた仕事が一段落する。祖母の介護をしたことがきっかけで介護士に転職する。'},
+        { title: '2017年12月', text: '介護福祉士になるために必要な介護職員初任者研修の資格を入手。この頃から働き方や生き方を模索するようになる。'},
+        { title: '2019年2月', text: '沖縄のマラソン大会にて偶然バスで隣になった海外に勤めているエンジニアの人とお話をして、今まで無縁だったエンジニアの働き方や仕事内容を知る。'},
+        { title: '2019年4月', text: '０から１を作るエンジニアの仕事に憧れを持つようになる。'},
+        { title: '2019年9月', text: 'プログラマーになるためにスクールに通うことを決意。そのための貯金を開始する。'},
+        { title: '2020年1月', text: 'PGスクールTECHEXPERTに入学。プログラミングに没頭し、webサービスの基礎を学ぶ。'}
+        ]
     }
-  },
+  }
 }
 
 </script>
 
 <style scoped>
+h1 {
+  font-size: 40px;
+}
 .contents{
   width: 100%;
-  height: 1500px;
-  background-color: burlywood;
   display: flex;
 }
 .left-contents{
   width: 55%;
   height: 100%;
-  background: chartreuse;
+}
+.profiles{
+  width: 100%;
+  padding: 40px 0 20px 0;
 }
 .profile{
-  width: 90%;
-  height: 500px;
-  background-color: coral;
+  width: 80%;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.left-profile{
+  height: 100%;
+  margin: 20px;
+  padding-right: 20px;
+}
+.my-image-picture{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: center center;
+  background-color: white;
+}
+.right-profile{
+  width: 50%;
+  height: 100%;
+}
+p1 {
+  padding-top: 40px;
+}
+.skills{
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
 }
 .skill{
-  width: 90%;
-  height: 500px;
-  background-color: yellow;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.right-contents
-{
-width: 45%;
+.skill-box{
+  width: 40%;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.right-contents{
+width: 40%;
 height: 100%;
-background: red;
+padding-top: 40px;
 }
+.histories{
+  width: 90%;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 30px 30px 90px;
+}
+.history{
+  margin: 0 auto;
+}
+.history-box{
+  margin: 30px auto;
+}
+
 
 </style>
