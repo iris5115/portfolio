@@ -13,20 +13,14 @@
 .contents{
   width: 100vw;
   height: calc(100vh - 140px);
-  background: #f3f3f3;
-  display: flex;
-	align-items: center;
-	justify-content: center;
+  background: #ffffff;
 }
-
 .title {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 90px;
-}
-.footer{
-  width: 100vw;
-  height: 50px;
-  background-color: red;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 200px;
 }
 </style>
