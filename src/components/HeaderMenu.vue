@@ -42,10 +42,11 @@ a {
   font-weight: bold;
   text-decoration: none;
   line-height: 50px;
+
 }
 
-div{
-  background: cornflowerblue;
+div {
+  background: #f3f3f3;
 }
 
 @media (max-width: 1000px)

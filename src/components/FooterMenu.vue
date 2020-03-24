@@ -15,7 +15,7 @@
   text-align: center;
   line-height: 50px;
   font-weight: bold;
-  background: #ffffff;
+  background: #f3f3f3;
   height: 50px;
 }
 a {
