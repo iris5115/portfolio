@@ -42,7 +42,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   line-height: 50px;
-
+  text-align: center;
 }
 
 div {
@@ -71,7 +71,7 @@ div {
 {
   ol {
     margin-left: auto;
-    width: 600px;
+    width: 60%;
     display:flex;
     justify-content: center;
     padding: 20px 0;
