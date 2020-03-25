@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <header-menu></header-menu>
-    <router-view/>
+    <transition mode=”out-in”>
+      <router-view />
+    </transition>
     <footer-menu></footer-menu>
   </div>
 </template>
@@ -34,4 +36,10 @@ export default {
   padding: 0px;
 }
 
+.v-enter-active, .v-leave-active {
+  transition: opacity .5s;
+}
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
 </style>
