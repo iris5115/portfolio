@@ -10,16 +10,15 @@
 </script>
 
 <style scoped>
-.contents{
-  width: 100%;
-  height: calc(100vh - 140px);
-  background: #ffffff;
-  position: relative;
-}
-
 
 @media (max-width: 1000px)
 {
+  .contents{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: #ffffff;
+  position: relative;
+  }
   .title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -32,6 +31,12 @@
 }
 @media (min-width: 1000px)
 {
+  .contents{
+  width: 100%;
+  height: calc(100vh - 140px);
+  background: #ffffff;
+  position: relative;
+  }
   .title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;

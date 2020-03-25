@@ -49,7 +49,7 @@ export default {
         { title: 'MySQL', text: 'スクールでの制作物や共同開発に使用。RDBMSの勉強は現状の課題の一つ。' },
         { title: 'Javasqript', text: 'JQueryやVue.jsを使用。かっこいいサイトを作りたいので毎日勉強中。' },
         { title: 'Github', text: '個人開発や共同開発の際に使用。これからもどんどん草を生やしていきます。' },
-        { title: 'C言語', text: 'ゲーム運営会社に入る前に勉強。基本的な文法は理解しています。' }
+        { title: 'C言語', text: 'ゲーム運営会社に入る前に少し勉強していました。' }
       ],
       lists: [
         { title: '2016年8月', text: 'ゲームが好きだったこともあり、ゲーム運営会社に入社。' },
@@ -68,92 +68,181 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size: 40px;
-}
-.contents{
-  width: 100%;
-  display: flex;
-}
-.left-contents{
-  width: 55%;
-  height: 100%;
-}
-.profiles{
-  width: 100%;
-  padding: 40px 0 20px 0;
-}
-.profile{
-  width: 80%;
-  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 30px;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-}
-.left-profile{
-  height: 100%;
-  margin: 20px;
-  padding-right: 20px;
-}
-.my-image-picture{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-position: center center;
-  background-color: white;
-}
-.right-profile{
-  width: 50%;
-  height: 100%;
-}
-p1 {
-  padding-top: 40px;
-}
-.skills{
-  width: 80%;
-  margin: 30px auto;
-  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 30px;
-}
-.skill{
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.skill-box{
+@media (min-width: 1000px)
+{
+  h1 {
+    font-size: 40px;
+  }
+  .contents{
+    width: 100%;
+    display: flex;
+  }
+  .left-contents{
+    width: 55%;
+    min-width: 600px;
+    height: 100%;
+  }
+  .profiles{
+    width: 100%;
+    padding: 40px 0 20px 0;
+  }
+  .profile{
+    width: 80%;
+    min-width: 480px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .left-profile{
+    height: 100%;
+    margin: 20px;
+    padding-right: 20px;
+  }
+  .my-image-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center center;
+    background-color: white;
+  }
+  .right-profile{
+    width: 50%;
+    height: 100%;
+  }
+  p1 {
+    padding-top: 40px;
+  }
+  .skills{
+    width: 80%;
+    min-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .skill{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .skill-box{
+    width: 40%;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .right-contents{
   width: 40%;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
-  background-color: #ffffff;
-  border-radius: 20px;
+  min-width: 550px;
+  height: 100%;
+  padding-top: 40px;
+  }
+  .histories{
+    width: 90%;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 30px 30px 60px;
+  }
+  .history{
+    margin: 0 auto;
+  }
+  .history-box{
+    margin: 30px auto;
+  }
 }
 
-.right-contents{
-width: 40%;
-height: 100%;
-padding-top: 40px;
-}
-.histories{
+@media (max-width: 1000px)
+{
+h1 {
+    font-size: 30px;
+  }
+  .contents{
+    width: 100%;
+  }
+  .left-contents{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .profiles{
+    padding: 40px 0 20px 0;
+  }
+  .profile{
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .left-profile{
+    height: 100%;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .my-image-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center center;
+    background-color: white;
+  }
+  .right-profile{
+    height: 100%;
+  }
+  p1 {
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p2 {
+    font-size: 13px;
+  }
+  .skills{
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .skill{
+    margin: 0 auto;
+  }
+  .skill-box{
+    width: 80%;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .right-contents{
   width: 90%;
-  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
-  background-color: #ffffff;
-  border-radius: 20px;
+  height: 100%;
+  padding: 25px 0;
   margin: 0 auto;
-  padding: 30px 30px 60px;
+  }
+  .histories{
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .history-box{
+    margin: 35px auto;
+  }
 }
-.history{
-  margin: 0 auto;
-}
-.history-box{
-  margin: 30px auto;
-}
-
-
 </style>

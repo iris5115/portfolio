@@ -47,6 +47,7 @@ a {
 
 div {
   background: #f3f3f3;
+  width: 100vw;
 }
 
 @media (max-width: 1000px)
