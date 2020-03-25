@@ -18,8 +18,6 @@
   background: #f3f3f3;
   height: 50px;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 a {
   width: 100%;
