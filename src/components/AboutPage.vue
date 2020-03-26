@@ -4,13 +4,13 @@
     <div class="profiles">
       <div class="profile">
         <div class="left-profile">
-          <img class="my-image-picture" src="../assets/my-image-picture.png"/>
+          <img class="my-image-picture" src="../assets/my-image-picture.jpeg"/>
         </div>
         <div class="right-profile">
           <h1>Profile</h1>
           <p1>まさしょーです。０から１を作るエンジニアの仕事に憧れ、2020年1月から転職に向け本格的にプログラミングを勉強中！<br>
           プライベートでは自身のスキル向上も兼ねてwebサービスの個人開発をしています。<br>
-          最近、機械学習に興味が出てきたのでPythonを使ったサービスを作ることを検討中。</p1>
+          機械学習に興味が出てきたので、Pythonを用いたサービスを作ることを検討中。</p1>
         </div>
       </div>
     </div>

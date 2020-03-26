@@ -18,6 +18,7 @@
   background: #f3f3f3;
   height: 50px;
   width: 100%;
+  box-shadow: 0 -8px 3px -3px rgba(0, 0, 0, 0.05);
 }
 a {
   width: 100%;
