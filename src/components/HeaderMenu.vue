@@ -48,6 +48,7 @@ a {
 div {
   background: #f3f3f3;
   width: 100vw;
+  box-shadow: 0 8px 3px -3px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1000px)
