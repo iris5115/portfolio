@@ -98,7 +98,7 @@
   }
   .contents{
     width: 90%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     background: #ffffff;
     position: relative;
     margin: 0 auto;
